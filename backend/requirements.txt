@@ -18,3 +18,12 @@ typing_extensions==4.10.0
 uvicorn==0.28.0
 watchfiles==0.21.0
 websockets==12.0
+PyPDF2
+textract
+pandas
+torch
+transformers
+python-multipart
+six
+-q -U google-generativeai
+python-docx

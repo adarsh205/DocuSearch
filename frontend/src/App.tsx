@@ -66,14 +66,14 @@ export default function App() {
 
         <br></br>
         <label className="fileLabel" htmlFor="file">
-          Upload CSV file:
+          Upload CSV, DOCX, TXT or PDF file:
         </label>
 
         <input
           type="file"
           id="file"
           name="file"
-          accept=".csv"
+          accept=".csv, .txt, .pdf, .docx"
           onChange={handleFileChange}
           className="fileInput"
         />
