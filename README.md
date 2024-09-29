@@ -18,8 +18,6 @@
 ### Prerequisites
 - Python 3.x
 - Flask
-- Gemini Api Key from `https://ai.google.dev/gemini-api?lang=python`
-- Secret Key for CSRF
 
 ### Steps
 1. Clone the repository:
@@ -39,7 +37,7 @@
    
 4.Get your GEMINI_API_KEY from `https://ai.google.dev/gemini-api?lang=python`
 
-5.Set your SECRET_KEY:
+5.Set your SECRET_KEY for CSRF:
    ```python
    import os
    SECRET_KEY = os.urandom(32)
