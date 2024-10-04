@@ -1,6 +1,6 @@
 # DocuSearch
 
-**DocuSearch** is an AI-powered platform that allows users to upload files (TXT, PDF, CSV, DOCX) and ask queries related to the file contents, delivering instant, intelligent answers through a simple interface. You can visit the web app [Here](https://docusearch.onrender.com)
+**DocuSearch** is an AI-powered platform that allows users to upload files (TXT, PDF, DOCX) and ask queries related to the file contents, delivering instant, intelligent answers through a simple interface. You can visit the web app [Here](https://docusearch.onrender.com)
 
 ## Features
 - **Multi-file Format Support**: Supports TXT, PDF, and DOCX file types.
