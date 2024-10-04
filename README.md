@@ -29,12 +29,27 @@
    ```bash 
    cd project-name
    ```
+   
 3. Install the dependencies from `requirements.txt`:
    ```bash 
    pip install -r requirements.txt
    ```
    
-4. Run the Flask server:
+4.Get your GEMINI_API_KEY from `https://ai.google.dev/gemini-api?lang=python`
+
+5.Set your SECRET_KEY for CSRF:
+   ```python
+   import os
+   SECRET_KEY = os.urandom(32)
+   ```
+   
+5. Store your SECRET_KEY and GEMINI_API_KEY in .env file:
+   ```plaintext
+   GEMINI_API_KEY = { Your api key }
+   SECRET_KEY = { Your secret key }
+   ```
+   
+6. Run the Flask server:
    ```bash 
    flask run
    ```
