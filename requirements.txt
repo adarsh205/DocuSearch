@@ -1,5 +1,5 @@
 python-docx
-google-generativeai
+google-genai
 Bootstrap_Flask==2.2.0
 Flask_WTF==1.2.1
 WTForms==3.0.1

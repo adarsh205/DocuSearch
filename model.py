@@ -1,17 +1,12 @@
 import os
 from dotenv import load_dotenv
-import google.generativeai as genai
+from google import genai
 # Load variables from .env file
 load_dotenv()
 
 # Get API key from environment variable
 API_KEY = os.getenv("GEMINI_API_KEY")
-genai.configure(api_key=API_KEY)
-
-# Define the endpoint for generating text
-ENDPOINT = "https://api.openai.com/v1/completions"
-
-model = genai.GenerativeModel('gemini-pro')
+client = genai.Client(api_key=API_KEY)
 
 
 def generate(extracted_text, question):
@@ -30,5 +25,5 @@ def generate(extracted_text, question):
     
     '''
 
-    response = model.generate_content(prompt)
+    response = client.models.generate_content(model="gemini-2.0-flash", contents=prompt)
     return response.text
